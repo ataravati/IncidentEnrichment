@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}</ProjectGuid>
+    <ProjectGuid>{509B9E8B-57BD-4CDD-8661-DB09BA621911}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IncidentEnrichment.Api</RootNamespace>
-    <AssemblyName>IncidentEnrichment.Api</AssemblyName>
+    <RootNamespace>IncidentEnrichment</RootNamespace>
+    <AssemblyName>IncidentEnrichment</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -120,9 +120,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51664</DevelopmentServerPort>
+          <DevelopmentServerPort>52041</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51664/</IISUrl>
+          <IISUrl>http://localhost:52041/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

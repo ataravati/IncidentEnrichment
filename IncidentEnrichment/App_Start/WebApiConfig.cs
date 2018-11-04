@@ -3,7 +3,7 @@ using System;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 
-namespace IncidentEnrichment.Api
+namespace IncidentEnrichment
 {
     public static class WebApiConfig
     {
