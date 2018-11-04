@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IncidentEnrichment.Api", "IncidentEnrichment.Api\IncidentEnrichment.Api.csproj", "{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3CFF282-2673-493B-8AC2-7BE71D92DFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA648B54-6E5F-4B14-8DD4-CB37FA598184}
+	EndGlobalSection
+EndGlobal
