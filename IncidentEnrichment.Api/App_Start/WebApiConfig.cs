@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Newtonsoft.Json;
+using System;
+using System.Net.Http.Formatting;
 using System.Web.Http;
 
 namespace IncidentEnrichment.Api
@@ -19,6 +19,16 @@ namespace IncidentEnrichment.Api
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+
+            config.Formatters.JsonFormatter.MediaTypeMappings.Add(new RequestHeaderMapping("Accept",
+                "text/html",
+                StringComparison.InvariantCultureIgnoreCase,
+                true,
+                "application/json")
+            );
+
+            config.Formatters.JsonFormatter.SerializerSettings.Formatting = Formatting.Indented;
         }
     }
 }
