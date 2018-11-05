@@ -3,13 +3,14 @@
 
     var module = angular.module("main");
      module.controller('MapCtrl',
-         ["$scope", "incidentService",
-             function ($scope, incidentService) {
+         ["$scope", "incidentService", "weatherService",
+             function ($scope, incidentService, weatherService) {
                  var marker;   
                  var center = { lat: 37.5407, lng: -77.4360 };
                  $scope.error = '';
                  $scope.IncidentNumber = '';
                  $scope.incident = {};
+                 $scope.weather = {};
 
                  function initialize() {
                      $scope.map = new google.maps.Map(document.getElementById('map'), {
@@ -23,6 +24,7 @@
                  $scope.findIncident = function () {
                      $scope.error = '';
                      $scope.incident = {};
+                     $scope.weather = {};
                      if (marker) {
                          marker.setMap(null);
                      }
@@ -32,6 +34,7 @@
                      incidentService.getIncident($scope.incidentNumber).then(function (response) {
                          $scope.incident = response.data;
                          showIncidentOnMap();
+                         getWeatherInfo();
                      }, function (response) {
                          if (response.status === 404) {
                              $scope.error = "The incedent was not found.";
@@ -53,6 +56,26 @@
                      marker.setMap($scope.map);
                      $scope.map.setZoom(17);
                      $scope.map.panTo(position);
+                 };
+
+                 var getWeatherInfo = function () {
+                     var latitude = $scope.incident.address.latitude;
+                     var longitude = $scope.incident.address.longitude;
+                     var start_date = $scope.incident.description.event_opened;
+                     var end_date = $scope.incident.description.event_closed;
+
+                     weatherService.getWeatherInfo(latitude, longitude, start_date, end_date).then(function (response) {
+                         if (response.data.error) {
+                             $scope.weather = {};
+                             $scope.error = "Weather info is not available.";
+                         }
+                         else {
+                             $scope.weather = response.data.data[0];
+                         }
+                     }, function (response) {
+                         $scope.weather = {};
+                         $scope.error = "Weather info is not available.";
+                     });
                  };
              }
         ]);

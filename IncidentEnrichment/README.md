@@ -1,33 +1,14 @@
-Background
-==========
-Enrich 911 emergency incident data to provide better analytics for a fire department.
 
-Task
-----
-Given an incident data, enrich it and then display the location and data on a map for easy validation.
-
-Enrichments
------------
-* Weather at the time of the incident (use a weather service of your choice).
-* Parcel data at the location of the incident. Use this existing service which belongs to the city of Richmond, VA: http://gis.richmondgov.com/ArcGIS/rest/services/WebMercator/Parcels/MapServer/2/query. It has API Reference documentation link as well. Note that a Parcel is a polygon with attributes such as the value of the property, owner info, etc. The incident has a point as "longitude" and "latitude" properties (which corresponds to `"spatialReference" : {"wkid" : 4326}`).  
-*  Optional: If you have extra time or want to go the extra mile, are there additional attributes that would be helpful for the department to know?
-
-Notes
------
-* Example incidents are provided in the data folder.
-* We will test the project with an arbitrary incident file that is also from Richmond, VA and in the same format.
-* It would be sufficient for the app to only handle one CAD file at a time.
-* The incident location and attributes should be displayed on a map in the browser.
-* You can enrich the incident and get it on a map however you wish.
-* We would like for you to spend up to 4 hours. It is okay if you spend less time or more time so long as you have a working app.
-* Use technology stack of your choice.
-
-Deliverable
------------
-* Link to a Github repository with your commits as you originally made them. Do not squash them or just have a single commit. 
-* There should be a README in the repo with:
     * steps to install and run your app
+	Download the Github repository, and run the application in Visual Studio (Windows)
+
     * did you complete the project? comment as needed.
+	The parcel data API doesn't exist under the URL provided in the instructions, and I couldn't find any other API.
+	Also, the weather APIs usually don't have the historical data for free. The Web API I used only provides histrical data
+	for recent dates (around a month). I had to manually change the dates in one of the json files so I can test it.
+
     * how much time did you spend on the project?
+	I spent around 6 hours throughout the day, but out of that, I spent around 2-3 hours looking for APIs.
+
     * Add a couple of screen shots to the repo that show the working version as running on your machine. 
-* Assume the user will be on OSX but if you do not have access to OSX machine, provide needed steps to run your app on any other OS.
+	They are in the repo.

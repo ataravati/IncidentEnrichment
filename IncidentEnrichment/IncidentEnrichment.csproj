@@ -81,12 +81,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\weatherService.js" />
     <Content Include="app\incidentService.js" />
     <Content Include="app\main.js" />
     <Content Include="app\MapCtrl.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="apparatus.html" />
+    <Content Include="Screen Capture 1.PNG" />
+    <Content Include="Screen Capture 2.PNG" />
+    <Content Include="weather.html" />
     <Content Include="description.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -98,6 +103,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\IncidentsController.cs" />
+    <Compile Include="Controllers\WeatherController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

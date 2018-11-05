@@ -35,9 +35,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6" ng-include="'description.html'">
+            <div class="col-md-6" ng-if="incident.description" ng-include="'description.html'">
             </div>
-            <div class="col-md-6" ng-include="'aparatus.html'">
+            <div class="col-md-6" ng-if="incident.apparatus" ng-include="'apparatus.html'">
             </div>
         </div>
     </div>
@@ -48,6 +48,7 @@
 
     <script src="app/main.js"></script>
     <script src="app/incidentService.js"></script>
+    <script src="app/weatherService.js"></script>
     <script src="app/MapCtrl.js"></script>
 </body>
 </html>

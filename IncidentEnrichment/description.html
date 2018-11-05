@@ -27,3 +27,23 @@
         </div>
     </div>
 </div>
+<div ng-if="weather" class="panel panel-default">
+    <div class="panel-heading">Incident Description</div>
+    <div class="panel-body">
+        <div>
+            <label>Description:</label> <span>{{weather.weather.description}}</span>
+        </div>
+        <div>
+            <label>Temperature:</label> <span>{{weather.temp}} &deg;F</span>
+        </div>
+        <div>
+            <label>UV Index:</label> <span>{{weather.uv}}</span>
+        </div>
+        <div>
+            <label>Precitipation:</label> <span>{{weather.precip}}</span>
+        </div>
+        <div>
+            <label>Snow:</label> <span>{{ weather.snow }}</span>
+        </div>
+    </div>
+</div>
