@@ -81,11 +81,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\incidentService.js" />
     <Content Include="app\main.js" />
     <Content Include="app\MapCtrl.js" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="description.html" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="README.md" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

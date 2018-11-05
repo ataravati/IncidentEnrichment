@@ -1,0 +1,29 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">Incident Description</div>
+    <div class="panel-body">
+        <div>
+            <label>Incident Number:</label> <span>{{incident.description.incident_number}}</span>
+        </div>
+        <div>
+            <label>Type:</label> <span>{{incident.description.type}}</span>
+        </div>
+        <div>
+            <label>Sub-type:</label> <span>{{incident.description.subtype}}</span>
+        </div>
+        <div>
+            <label>Event opened:</label> <span>{{ incident.description.event_opened | date : "medium" }}</span>
+        </div>
+        <div>
+            <label>First unit dispatched:</label> <span>{{ incident.description.first_unit_dispatched | date : "medium" }}</span>
+        </div>
+        <div>
+            <label>First unit enroute:</label> <span>{{ incident.description.first_unit_enroute | date : "medium" }}</span>
+        </div>
+        <div>
+            <label>First unit arrived:</label> <span>{{ incident.description.first_unit_arrived | date : "medium" }}</span>
+        </div>
+        <div>
+            <label>Event closed:</label> <span>{{ incident.description.event_closed | date : "medium" }}</span>
+        </div>
+    </div>
+</div>
